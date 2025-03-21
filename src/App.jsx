@@ -44,7 +44,7 @@ const App = ()=>{
     <div className="App">
       {btnValues.map((item)=>(
       <Button value = {item}/>))}
-      {/* <Button {...students}/> */}
+      
       <Button name = {students.name} age = {students.age}/>
 
       <div className="pricing-detail-main">
