@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ProductCard = ({name,location,thumb_title}) => {
+const ProductCard = ({name,location,thumb_title,thumb}) => {
   return (
     <div className='ProductItem'>
-        <div className='ProductThumb'>{thumb_title}</div>
+        <div className='ProductThumb'><img src={thumb} /></div>
         <div className='ProductInfo'>
             <div className='ProductTitle'>{name}</div>
             <div className='ProductLocation'>{location}</div>
