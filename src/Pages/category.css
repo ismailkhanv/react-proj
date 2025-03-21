@@ -1,0 +1,63 @@
+.ShopSection{
+    padding: 40px 15px;
+    max-width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+.MenuList{
+    display: flex;
+    gap: 14px;
+    border-right: 1px solid #eaeaea;
+    margin-right: 15px;
+    flex-direction: column;
+}
+.MenuListItem{
+    min-width: 120px;
+    text-decoration: none;
+    color: #333;
+    text-align: left;
+    padding: 0 14px;
+}
+.ProductGrid{
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.ProductThumb{
+    height: 300px;
+    background: #eaeaea;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.ProductGridWrapper{
+    flex: 1;
+}
+.ProductInfo{
+    text-align: center;
+}
+.ProductTitle{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 14px;
+}
+
+.ProductLocation{
+    font-size: 12px;
+    text-align: center;
+    padding: 0 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    color: #888080;
+}
