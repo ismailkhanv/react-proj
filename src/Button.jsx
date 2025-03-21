@@ -6,7 +6,7 @@ const Button = ({value,name,age,sec,location})=>{
             <h1>{age}</h1>   
             <h1>{sec}</h1>   
             <h1>{location}</h1>    
-    </div>
+        </div>
     )
 }
 export default Button
