@@ -4,6 +4,7 @@ import './App.css'
 import Table from "./Table"
 import UseState from "./UseState"
 import Shop from "./Pages/Shop"
+import Reducer from "./Reducer"
 
 
 const App = ()=>{
@@ -67,6 +68,10 @@ const App = ()=>{
       <Table />
 
       <Shop />
+
+      <div className="ReducerMethod">
+        <Reducer />
+      </div>
       
       
     </div>

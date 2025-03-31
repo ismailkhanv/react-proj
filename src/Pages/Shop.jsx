@@ -21,7 +21,6 @@ const Shop = () => {
     { name: 'Kumar', cat_id: 1, location: 'Chennai', thumb_title: 'Men',thumb: 'images/users/men-5.jpg' },
     { name: 'Preethi', cat_id: 2, location: 'Mumbai', thumb_title: 'Women',thumb: 'images/users/women-4.jpg' },
     { name: 'Simran', cat_id: 2, location: 'Cbe', thumb_title: 'Women',thumb: 'images/users/women-5.jpg' },
-
   ]
 
   const mainProducts =  products.filter((x =>
