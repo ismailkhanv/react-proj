@@ -9,5 +9,3 @@ export const newStore = configureStore({
 });
 
 export default newStore
-
-
