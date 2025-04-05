@@ -5,6 +5,10 @@ import Table from "./Table"
 import UseState from "./UseState"
 import Shop from "./Pages/Shop"
 import Reducer from "./Reducer"
+import { useDispatch, useSelector } from "react-redux"
+import { formDisplay, textCountDisplay } from "./slice/slice"
+import { BrowserRouter } from "react-router-dom"
+
 
 
 const App = ()=>{
@@ -40,8 +44,18 @@ const App = ()=>{
         plan_features : ["free for 20 user",'Unlimited features','500 request per day']
       },
     ]
+
+    const userText = useSelector((state)=> state.slicestore.inputvalue);
+    const textCount = useSelector((state)=>state.slicestore.textCount);
+    const dispatch = useDispatch();
+    const textChange = (e)=>{
+      const output = e.target.value;
+      dispatch(formDisplay(output));
+      dispatch(textCountDisplay(output.length));
+    }
   
   return (
+    <BrowserRouter>
     <div className="App">
       {btnValues.map((item)=>(
       <Button value = {item}/>))}
@@ -72,9 +86,17 @@ const App = ()=>{
       <div className="ReducerMethod">
         <Reducer />
       </div>
+
+      <div className="ReduxMethod">
+        <input type="text" onChange={textChange}></input>
+        <p>{userText}</p>
+        <p>Text Count is: {textCount}</p>
+      </div>
       
+
       
     </div>
+    </BrowserRouter>
   )
 }
 export default App
